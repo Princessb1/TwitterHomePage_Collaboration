@@ -4,7 +4,6 @@
     --body-black: rgb(0, 0, 0);
     --body-white: rgb(231, 233, 234);
     --button-blue: rgb(29, 155, 240);
-    --tweets-blue: rgb(29, 155, 240);
     --likes-button: rgb(255, 20, 147);
     --likes-button-hover: rgba(255, 20, 147, 0.1);
     --retweet-button: rgb(7, 164, 104);
@@ -108,6 +107,10 @@ nav {
     vertical-align: baseline;
 }
 
+.explore-search {
+    display: none;
+}
+
 .home-link {
     font-weight: 700;
 }
@@ -124,9 +127,9 @@ nav {
     padding: 1rem 6rem;
     background-color: var(--button-blue);
     color: var(--body-white);
-    text-align: center;
     font-size: 1.2rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .tweet-button-2 {
@@ -314,8 +317,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem 1rem 5rem;
     border-bottom: 1px solid var(--border-ash);
+    padding: 0.5rem 1rem 1rem 5rem;
 }
 
 .tools-wrapper {
@@ -347,9 +350,9 @@ main {
     background-color: var(--button-blue);
     color: var(--body-white);
     opacity: 50%;
-    text-align: center;
     font-size: 1rem;
     font-weight: 700;
+    text-align: center;
 }
 
 /*---------------------- HIDDEN TWEETS SECTION ------------------*/
@@ -380,8 +383,8 @@ main {
 }
 
 .topic-link p {
-    color: var(--button-blue);
     padding-left: 1rem;
+    color: var(--button-blue);
     font-size: 0.9rem;
 }
 
@@ -457,15 +460,15 @@ main {
 }
 
 .more-tweets div {
-    color: var(--tweet-reaction-icons);
     padding: 0.5rem 0.5rem 0.3rem;
+    color: var(--tweet-reaction-icons);
     transition: all 0.1s ease-in-out;
 }
 
 .more-tweets div:hover {
     border-radius: 50%;
     background-color: var(--icon-hover);
-    color: var(--tweets-blue) !important;
+    color: var(--button-blue) !important;
     cursor: pointer;
 }
 
@@ -577,9 +580,9 @@ main {
 }
 
 .tweet-image {
+    margin: 1rem 1rem 1rem;
     border: 1px solid var(--border-ash);
     border-radius: 1rem;
-    margin: 1rem 1rem 1rem;
 }
 
 .tweet-image img {
@@ -633,10 +636,10 @@ main {
 }
 
 .search-icon {
-    color: #71767b !important;
     position: relative;
     top: 0.8rem;
     left: 2.5rem;
+    color: #71767b !important;
 }
 
 .search-field input {
@@ -654,9 +657,9 @@ main {
 
 .search-field input:focus,
 .search-field input:active {
+    outline: 1px solid var(--button-blue);
     background-color: var(--body-black);
     color: var(--body-white);
-    outline: 1px solid var(--button-blue);
     font-size: 1rem;
 }
 
@@ -665,12 +668,12 @@ main {
 }
 
 #search::-webkit-search-cancel-button {
-    -webkit-appearance: none;
     position: absolute;
     right: 1rem;
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 50%;
+    -webkit-appearance: none;
     background: url(./images/dismiss2.svg);
     background-repeat: no-repeat;
     background-position: 0.2rem;
@@ -686,8 +689,8 @@ main {
     position: relative;
     top: 4.3rem;
     width: 85%;
-    border-radius: 1rem;
     margin: 0 0 1rem 1.5rem;
+    border-radius: 1rem;
     background-color: var(--trends-ash);
 }
 
@@ -718,8 +721,8 @@ main {
 
 .trend-type p {
     opacity: 50%;
-    font-weight: 200;
     font-size: 0.9rem;
+    font-weight: 200;
 }
 
 .trend-type div {
@@ -730,7 +733,7 @@ main {
 .trend-type div:hover {
     border-radius: 50%;
     background-color: var(--icon-hover);
-    color: var(--tweets-blue) !important;
+    color: var(--button-blue) !important;
     cursor: pointer;
 }
 
@@ -741,8 +744,8 @@ main {
 
 .trend-stats {
     opacity: 50%;
-    font-weight: 200;
     font-size: 0.9rem;
+    font-weight: 200;
     line-height: 2.7;
 }
 
@@ -821,8 +824,8 @@ main {
     border-radius: 2rem;
     padding: 0.5rem 1.2rem;
     background-color: var(--body-white);
-    font-family: inherit;
     font-weight: 600;
+    font-family: inherit;
     transition: all 0.1s ease;
 }
 
@@ -838,8 +841,8 @@ main {
 
 .promoted > div > p {
     padding-left: 0.3rem;
-    font-size: 0.9rem;
     opacity: 50%;
+    font-size: 0.9rem;
 }
 
 .trending-footer {

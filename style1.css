@@ -258,6 +258,10 @@ main {
     backdrop-filter: brightness(60%) blur(7px);
 }
 
+.home-header div {
+    display: none;
+}
+
 .main-section-title {
     font-size: 1.3rem;
 }

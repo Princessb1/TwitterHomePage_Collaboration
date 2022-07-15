@@ -792,12 +792,20 @@ main {
     font-weight: 700;
 }
 
+.follower-name-2 {
+    display: none;
+}
+
 .verified {
     padding-left: 0.2rem;
 }
 
 .follower-username {
     opacity: 50%;
+}
+
+.follower-username2 {
+    display: none;
 }
 
 .follower-name:hover {

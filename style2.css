@@ -55,15 +55,15 @@ header {
     flex-direction: column;
     align-items: flex-end;
     width: 17rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 .header-container {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 5.9rem;
+    align-items: center;
+    width: 5rem;
     height: 100%;
     overflow-y: auto;
 }
@@ -124,12 +124,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0.5;
+    margin-top: 0.5rem;
 }
 
 .tweet-button {
     border-radius: 50%;
-    padding: 1.8rem;
+    padding: 1.7rem;
     background: url(./images/tweet-button.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -798,12 +798,20 @@ main {
     font-weight: 700;
 }
 
+.follower-name-2 {
+    display: none;
+}
+
 .verified {
     padding-left: 0.2rem;
 }
 
 .follower-username {
     opacity: 50%;
+}
+
+.follower-username2 {
+    display: none;
 }
 
 .follower-name:hover {
@@ -871,10 +879,6 @@ main {
         width: 23rem;
     }
 
-    .main-section-header {
-        width: 38rem;
-    }
-
     .trending {
         width: 32rem;
         padding-left: 0.5rem;
@@ -887,10 +891,58 @@ main {
     .trend-container {
         width: 20rem;
     }
+
+    .follower-name-1 {
+        display: none;
+    }
+
+    .follower-name-2 {
+        display: block;
+    }
+
+    .follower-username1 {
+        display: none;
+    }
+
+    .follower-username2 {
+        display: block;
+    }
+}
+
+@media (max-width: 1091px) {
+    header {
+        width: 14rem;
+    }
+
+    .trending {
+        width: 30rem;
+        padding-left: 0.3rem;
+    }
+
+    .trending-header {
+        width: 22rem;
+    }
+
+    .trends {
+        width: 20rem;
+    }
+
+    .trend-container {
+        width: 19rem;
+    }
 }
 
 @media (max-width: 1067px) {
+    header {
+        margin-left: 3rem;
+    }
     .message-bar {
         display: none;
+    }
+}
+
+@media (max-width: 1031px) {
+    header {
+        margin-left: 3rem;
     }
 }
